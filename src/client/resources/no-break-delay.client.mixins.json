@@ -2,8 +2,8 @@
 	"required": true,
 	"package": "com.sniffer.nobreakdelay.client.mixin",
 	"compatibilityLevel": "JAVA_25",
-	"client": [
-		"ExampleClientMixin"
+		"client": [
+		"NoBreakDelayMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
