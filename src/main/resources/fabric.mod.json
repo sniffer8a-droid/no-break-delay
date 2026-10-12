@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "no-break-delay",
+	"version": "${version}",
+	"name": "No Break Delay",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-break-delay/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sniffer.nobreakdelay.NoBreakDelay"
+		],
+		"client": [
+			"com.sniffer.nobreakdelay.client.NoBreakDelayClient"
+		]
+	},
+	"mixins": [
+		"no-break-delay.mixins.json",
+		{
+			"config": "no-break-delay.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
